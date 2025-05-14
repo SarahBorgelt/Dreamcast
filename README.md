@@ -4,7 +4,6 @@ This was a project file that I created during an introduction to coding course w
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DreamCast App</title>
   <link rel="stylesheet" href="CSS.css">
 </head>
 <body>
