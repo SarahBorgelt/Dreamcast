@@ -1,0 +1,16 @@
+* {
+  border: 1px solid red;
+  
+}
+
+body{
+  --background-color: #000000;
+  --font-color: #FCFCFC;
+  --nav-color: #F2F2F2F;
+  --game-color: #D2F898;
+  --user-color: #F6F930;
+  
+  font-family: sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
