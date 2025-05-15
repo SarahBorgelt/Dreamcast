@@ -1,16 +1,70 @@
 * {
-  border: 1px solid red;
-  
+ /*  border: 1px solid red; */
 }
 
-body{
+body {
   --background-color: #000000;
   --font-color: #FCFCFC;
-  --nav-color: #F2F2F2F;
+  --nav-color: #2F2F2F;
   --game-color: #D2F898;
   --user-color: #F6F930;
   
   font-family: sans-serif;
   background-color: var(--background-color);
   color: var(--font-color);
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: .3fr repeat(4, 1.3fr);
+    grid-template-rows: .5fr 1.5fr 2fr 1.5fr;
+    gap: .2em;
+    grid-template-areas:
+      "nav . title title ."
+      "nav games games games games"
+      "nav ux ux ux ux"
+      "nav news news news news"
+  }
+
+.left-nav {
+  grid-area: nav;
+  background-color: var(--nav-color);
+}
+
+.title {
+  grid-area: title;
+  background-color: var(--user-color);
+  text-align: center;
+  color: black;
+  font-size: 2.5em;
+  border-radius: 22px;
+}
+
+.games {
+  grid-area: games;
+  background-color: var(--game-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.user-experience{
+  grid-area: ux;
+  background-color: var(--user-color);
+  text-align: center;
+  border-radius: 22px;
+  width: 68%;
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
+.news {
+  grid-area: news;
+  background-color: var(--game-color);
+  color: black;
+  text-align: center;
+  border-radius: 22px
+}
+p {
+  margin-top: 3em
 }
